@@ -32,4 +32,12 @@ public class Client {
         this.cnh = cnh;
         this.email = email;
     }
+
+    public static Client create(String nome, String cnh, String email) {
+        Client client = new Client();
+        client.nome = nome;
+        client.cnh = cnh;
+        client.email = email;
+        return client;
+    }
 }
