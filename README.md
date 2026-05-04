@@ -269,7 +269,7 @@ API available at `http://localhost:8081`
 - [x] Client CRUD with CQRS
 - [ ] Custom queries for Client (filter by name, email, cnh)
 - [ ] Pagination on list endpoints
-- [ ] Car CRUD with CQRS
+- [x] Car CRUD with CQRS
 - [ ] Location CRUD with CQRS
 - [ ] Global exception handler
 - [ ] Input validation with detailed error responses
