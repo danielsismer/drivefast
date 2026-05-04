@@ -1,6 +1,6 @@
 package com.drive.fast.application.command.client.update;
 
-import com.drive.fast.api.dto.response.ClientResponse;
+import com.drive.fast.api.dto.response.client.ClientResponse;
 import com.drive.fast.application.mapper.client.ClientMapper;
 import com.drive.fast.domain.entity.Client;
 import com.drive.fast.domain.exception.client.ClientNotFound;

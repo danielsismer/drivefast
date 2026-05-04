@@ -27,12 +27,6 @@ public class Client {
     @Column(nullable = false, unique = true)
     private String email;
 
-    public Client(String nome, String cnh, String email) {
-        this.nome = nome;
-        this.cnh = cnh;
-        this.email = email;
-    }
-
     public static Client create(String nome, String cnh, String email) {
         Client client = new Client();
         client.nome = nome;

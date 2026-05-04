@@ -1,23 +1,24 @@
-package com.drive.fast.application.query.getbyid;
+package com.drive.fast.application.query.client.getall;
 
-import com.drive.fast.api.dto.response.ClientResponse;
+import com.drive.fast.api.dto.response.client.ClientResponse;
 import com.drive.fast.application.mapper.client.ClientMapper;
-import com.drive.fast.domain.exception.client.ClientNotFound;
 import com.drive.fast.infrastructure.persistence.ClientRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
-public class GetClientByIdQueryHandler {
+public class GetAllClientsQueryHandler {
 
     private final ClientRepository repository;
     private final ClientMapper mapper;
 
-    public ClientResponse handle(Long id){
-        return repository.findById(id)
+    public List<ClientResponse> handle(){
+        return repository.findAll()
+                .stream()
                 .map(mapper::toResponse)
-                .orElseThrow(() -> new ClientNotFound(id));
+                .toList();
     }
-
 }

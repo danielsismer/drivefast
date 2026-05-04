@@ -1,12 +1,10 @@
 package com.drive.fast.application.facade.client.command;
 
-import com.drive.fast.api.dto.request.CreateClientRequest;
-import com.drive.fast.api.dto.request.UpdateClientRequest;
-import com.drive.fast.api.dto.response.ClientResponse;
-import com.drive.fast.application.command.client.create.CreateClientCommand;
+import com.drive.fast.api.dto.request.client.CreateClientRequest;
+import com.drive.fast.api.dto.request.client.UpdateClientRequest;
+import com.drive.fast.api.dto.response.client.ClientResponse;
 import com.drive.fast.application.command.client.create.CreateClientCommandHandler;
 import com.drive.fast.application.command.client.delete.DeleteClientCommandHandler;
-import com.drive.fast.application.command.client.update.UpdateClientCommand;
 import com.drive.fast.application.command.client.update.UpdateClientCommandHandler;
 import com.drive.fast.application.facade.client.command.port.ClientCommandFacadePort;
 import com.drive.fast.application.mapper.client.ClientMapper;
