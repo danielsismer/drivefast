@@ -1,6 +1,6 @@
 package com.drive.fast.application.query.client.getall;
 
-import com.drive.fast.api.dto.response.client.ClientResponse;
+import com.drive.fast.api.handler.dto.response.client.ClientResponse;
 import com.drive.fast.application.mapper.client.ClientMapper;
 import com.drive.fast.infrastructure.persistence.ClientRepository;
 import lombok.RequiredArgsConstructor;

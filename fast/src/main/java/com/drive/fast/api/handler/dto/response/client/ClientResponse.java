@@ -1,4 +1,4 @@
-package com.drive.fast.api.dto.response.client;
+package com.drive.fast.api.handler.dto.response.client;
 
 public record ClientResponse(
         Long id,

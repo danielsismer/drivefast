@@ -1,4 +1,4 @@
-package com.drive.fast.api.dto.response;
+package com.drive.fast.api.handler.dto.response;
 
 import java.time.LocalDateTime;
 import java.util.Map;

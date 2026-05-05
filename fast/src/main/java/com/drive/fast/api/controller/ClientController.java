@@ -1,8 +1,8 @@
 package com.drive.fast.api.controller;
 
-import com.drive.fast.api.dto.request.client.CreateClientRequest;
-import com.drive.fast.api.dto.request.client.UpdateClientRequest;
-import com.drive.fast.api.dto.response.client.ClientResponse;
+import com.drive.fast.api.handler.dto.request.client.CreateClientRequest;
+import com.drive.fast.api.handler.dto.request.client.UpdateClientRequest;
+import com.drive.fast.api.handler.dto.response.client.ClientResponse;
 import com.drive.fast.application.facade.client.command.ClientCommandFacade;
 
 import com.drive.fast.application.facade.client.query.ClientQueryFacade;

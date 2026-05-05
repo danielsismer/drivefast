@@ -1,4 +1,4 @@
-package com.drive.fast.api.dto.request.vehicle;
+package com.drive.fast.api.handler.dto.request.vehicle;
 
 import jakarta.validation.constraints.NotNull;
 

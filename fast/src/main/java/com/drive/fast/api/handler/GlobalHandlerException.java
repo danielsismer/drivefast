@@ -1,7 +1,9 @@
 package com.drive.fast.api.handler;
 
-import com.drive.fast.api.dto.response.ErrorResponse;
+import com.drive.fast.api.handler.dto.response.ErrorResponse;
 import com.drive.fast.domain.exception.client.ClientNotFound;
+import com.drive.fast.domain.exception.lease.LeaseNotFound;
+import com.drive.fast.domain.exception.vehicle.VehicleNotFound;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataAccessResourceFailureException;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -50,8 +52,8 @@ public class GlobalHandlerException {
         return buildResponse(HttpStatus.NOT_FOUND, ex.getMessage(), null);
     }
 
-    @ExceptionHandler(ClientNotFound.class)
-    public ResponseEntity<ErrorResponse> handleUserNotFound(ClientNotFound ex) {
+    @ExceptionHandler({ClientNotFound.class, VehicleNotFound.class, LeaseNotFound.class})
+    public ResponseEntity<ErrorResponse> handleNotFound(RuntimeException ex) {
         return buildResponse(HttpStatus.NOT_FOUND, ex.getMessage(), null);
     }
 

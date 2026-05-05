@@ -1,4 +1,4 @@
-package com.drive.fast.api.dto.response.vehicle;
+package com.drive.fast.api.handler.dto.response.vehicle;
 
 import java.math.BigDecimal;
 
