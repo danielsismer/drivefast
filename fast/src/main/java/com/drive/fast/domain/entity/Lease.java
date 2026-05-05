@@ -34,30 +34,31 @@ public class Lease {
         lease.dias = dias;
         lease.cliente = client;
         lease.veiculo = vehicle;
+        lease.veiculo.setDisponivel(false);
         lease.recalculateTotal();
         return lease;
     }
 
     public void update(Integer dias, Client client, Vehicle vehicle) {
-        if (dias != null) {
-            this.dias = dias;
-        }
-
-        if (client != null) {
-            this.cliente = client;
-        }
-
-        if (vehicle != null) {
+        if (vehicle != null && !vehicle.equals(this.veiculo)) {
             this.veiculo = vehicle;
+            this.veiculo.setDisponivel(false);
         }
+
+        if (dias != null) this.dias = dias;
+        if (client != null) this.cliente = client;
 
         recalculateTotal();
     }
 
-    private void recalculateTotal() {
-        this.valorTotal = this.veiculo.getValorDiaria()
-                .multiply(BigDecimal.valueOf(this.dias));
+    public void cancel() {
+        this.veiculo.setDisponivel(true);
     }
 
-
+    private void recalculateTotal() {
+        if (this.veiculo != null && this.dias != null) {
+            this.valorTotal = this.veiculo.getValorDiaria()
+                    .multiply(BigDecimal.valueOf(this.dias));
+        }
+    }
 }

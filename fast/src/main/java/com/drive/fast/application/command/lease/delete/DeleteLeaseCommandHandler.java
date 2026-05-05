@@ -17,6 +17,8 @@ public class DeleteLeaseCommandHandler {
         Lease lease = repository.findById(id)
                 .orElseThrow(() -> new LeaseNotFound(id));
 
+        lease.cancel();
+
         repository.delete(lease);
 
         return lease;

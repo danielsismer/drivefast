@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/api/vechicles")
+@RequestMapping("/api/vehicles")
 public class VehicleController {
 
     private final VehicleCommandFacade command;
@@ -41,7 +41,7 @@ public class VehicleController {
                 .body(command.delete(id));
     }
 
-    @GetMapping("/{id")
+    @GetMapping("/{id}")
     public ResponseEntity<VehicleResponse> findById(@PathVariable("id") Long id){
         return ResponseEntity
                 .status(200)
