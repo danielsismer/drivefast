@@ -1,4 +1,4 @@
-package com.drive.fast.api.dto.request.client;
+package com.drive.fast.api.handler.dto.request.client;
 
 public record UpdateClientRequest (
         String nome,

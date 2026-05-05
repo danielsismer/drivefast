@@ -1,8 +1,8 @@
 package com.drive.fast.application.mapper.vehicle;
 
-import com.drive.fast.api.dto.request.vehicle.CreateVehicleRequest;
-import com.drive.fast.api.dto.request.vehicle.UpdateVehicleRequest;
-import com.drive.fast.api.dto.response.vehicle.VehicleResponse;
+import com.drive.fast.api.handler.dto.request.vehicle.CreateVehicleRequest;
+import com.drive.fast.api.handler.dto.request.vehicle.UpdateVehicleRequest;
+import com.drive.fast.api.handler.dto.response.vehicle.VehicleResponse;
 import com.drive.fast.application.command.vehicle.create.CreateVehicleCommand;
 import com.drive.fast.application.command.vehicle.update.UpdateVehicleCommand;
 import com.drive.fast.domain.entity.Vehicle;

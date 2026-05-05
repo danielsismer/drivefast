@@ -1,7 +1,6 @@
 package com.drive.fast.application.facade.vehicle.query.port;
 
-import com.drive.fast.api.dto.response.vehicle.VehicleResponse;
-import com.drive.fast.domain.entity.Vehicle;
+import com.drive.fast.api.handler.dto.response.vehicle.VehicleResponse;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
 package com.drive.fast.application.facade.vehicle.query;
 
-import com.drive.fast.api.dto.response.vehicle.VehicleResponse;
+import com.drive.fast.api.handler.dto.response.vehicle.VehicleResponse;
 import com.drive.fast.application.facade.vehicle.query.port.VehicleQueryFacadePort;
 import com.drive.fast.application.mapper.vehicle.VehicleMapper;
 import com.drive.fast.application.query.vehicle.getall.GetAllVehiclesQueryHandler;

@@ -1,7 +1,7 @@
 package com.drive.fast.application.command.client.create;
 
 
-import com.drive.fast.api.dto.response.client.ClientResponse;
+import com.drive.fast.api.handler.dto.response.client.ClientResponse;
 import com.drive.fast.application.mapper.client.ClientMapper;
 import com.drive.fast.domain.entity.Client;
 import com.drive.fast.domain.exception.client.EmailAlreadyExists;

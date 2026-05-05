@@ -1,13 +1,12 @@
 package com.drive.fast.api.controller;
 
-import com.drive.fast.api.dto.request.vehicle.CreateVehicleRequest;
-import com.drive.fast.api.dto.request.vehicle.UpdateVehicleRequest;
-import com.drive.fast.api.dto.response.vehicle.VehicleResponse;
+import com.drive.fast.api.handler.dto.request.vehicle.CreateVehicleRequest;
+import com.drive.fast.api.handler.dto.request.vehicle.UpdateVehicleRequest;
+import com.drive.fast.api.handler.dto.response.vehicle.VehicleResponse;
 import com.drive.fast.application.facade.vehicle.command.VehicleCommandFacade;
 import com.drive.fast.application.facade.vehicle.query.VehicleQueryFacade;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
